@@ -1,0 +1,26 @@
+{
+    "sourceFormat": "BIGTABLE",
+    "sourceUris": [
+        "https://googleapis.com/bigtable/projects/cloud-engineer-dev/instances/find-seller-bt-instance-dev/tables/items"
+    ],
+    "bigtableOptions": {
+        "readRowkeyAsString": "true",
+        "columnFamilies" : [
+            {
+                "familyId": "item",
+                "onlyReadLatest": "true",
+                "type": "STRING"
+            },
+            {
+                "familyId": "buyer",
+                "onlyReadLatest": "true",
+                "type": "STRING"
+            },
+            {
+                "familyId": "seller",
+                "onlyReadLatest": "true",
+                "type": "STRING"
+            }
+        ]
+    }
+}
